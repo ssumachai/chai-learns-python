@@ -18,6 +18,8 @@ Chai
 '''
 print(course_three)
 
+# Indexing
+
 indexing = "Python for Beginners"
 another = indexing[:]       # Copies essentially
 
@@ -30,3 +32,12 @@ print(indexing[:5])         # Will Print from 0 to 4
 
 name = 'Jennifer'
 print(name[1:-1])
+
+# Formatted Strings
+
+first = 'Jihyo'
+last = 'Park'
+
+message = last + ' [' + first + '] is an idol'
+msg = f'{last} [{first}] is the leader of TWICE'
+print(msg)
