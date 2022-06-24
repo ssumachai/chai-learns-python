@@ -1,5 +1,4 @@
-from turtle import done, down
-
+# If Statements
 
 is_hot = False
 is_cold = False
@@ -24,3 +23,39 @@ if credit:
 else:
     down_payment = price*  0.2
 print(f'Down Payment: ${int(down_payment)} dollars')
+
+# Logical Operators
+has_high_income = False
+has_good_credit = True
+has_criminal_record = False
+
+if has_high_income and has_good_credit:
+    print('Eligible for Loan (AND)')            # BOTH have to be true!
+
+if has_high_income or has_good_credit:
+    print("Eligible for loan (OR)")             # EITHER or BOTH can be true!
+
+if has_good_credit and not has_criminal_record: # Flips Affected Bool
+    print("Eligible for Loan (NOT)")
+
+# Comparison Operators
+
+temperature = 35
+
+if temperature > 30:
+    print("It's a hot day")
+elif temperature < 10:
+    print("It's a cold day")
+else:
+    print("It's neither hot nor cold")
+
+# Example using input validator
+
+test_string = 'POP by IM NAYEON'
+
+if len(test_string) < 3:
+    print('Name must be at least 3 characters')
+elif len(test_string) > 50:
+    print('Name can be a maximum of 50 characters')
+else:
+    print('Name looks good!')
