@@ -54,3 +54,15 @@ for row in matrix:
     for column in row:
         print(column)
 
+# Immutable Lists are called Tuples!
+
+tuple = (1, 2, 3)
+print(tuple[0])
+
+coordinates = [1, 2, 3]
+
+# This is actually so broken.  You can unpack a tuple or list and assign into variables
+x, y, z = coordinates
+
+print(x)
+
